@@ -128,6 +128,7 @@ const TextHero = ({name, step }) => {
 
 const TextHeroStyled = styled.div`
   background:rgba(135, 206, 235,.6) url('./asset/bg-pattern.svg');
+  backdrop-filter: blur( 3px );
   background-size:80%;
   background-repeat:no-repeat;
   background-position: -20% -30%;
@@ -218,7 +219,7 @@ const Container = styled.div`
   align-items:center;
   height:100vh;
   overflow:hidden;
-  background-color:white;
+  background-color:tranparent
 `
 
 export default Hero

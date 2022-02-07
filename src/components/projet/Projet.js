@@ -62,7 +62,8 @@ const Container = styled(SectionContainer)`
   background-color:lightblue;
   overflow-x:hidden;
   height:auto;
-  h1{
+  >h1{
+    color:hsl(11,73%,66%);
     width:100%;
     text-align:center;
     line-height:4em;

@@ -31,12 +31,16 @@ const Container = styled.article`
   overflow:hidden;
   transition:.3s;
   a{
+    backdrop-filter: blur( 3px );
     display:block;
     width:100%;
     height:100%;
-    background:rgba(220,220,220,.8);
+    background:rgba(147, 112, 219,.8);
     opacity:0;
     border-radius:.5em;
+    box-shadow:0 0 4px 5px rgba(147, 112, 219,.8);
+    border:rgba(147, 112, 219,.8);
+    color:ivory;
     h1{
       text-align:center;
       text-transform:capitalize;

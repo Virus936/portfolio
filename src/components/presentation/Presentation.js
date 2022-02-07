@@ -28,8 +28,16 @@ const Container = styled(SectionContainer)`
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  color:hsl(11,73%,66%);
   h1,p{
-    transition:2s;
+    transition:800ms;
+  }
+  h1{
+    width:100%;
+    text-align:center;
+    line-height:4em;
+    font-size:2em;
+    text-transform:capitalize;
   }
 `
 
