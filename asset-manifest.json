@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1284be8b.css",
+    "main.js": "/portfolio/static/js/main.5ffaf741.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/tesla-vitrine.png": "/portfolio/static/media/tesla-vitrine.2e20c8f14d2bb84a7a23.png",
+    "static/media/body.png": "/portfolio/static/media/body.01c8c50610a26fae39f6.png",
+    "static/media/amazonfront.png": "/portfolio/static/media/amazonfront.465dfc2b4a71f0df0117.png",
+    "static/media/rock-papper-scissors.png": "/portfolio/static/media/rock-papper-scissors.267ac96a52b811d6c9a7.png",
+    "static/media/mask.png": "/portfolio/static/media/mask.56bf648987cc5b6ebb9b.png",
+    "static/media/tip-calculator.png": "/portfolio/static/media/tip-calculator.b9e18582f7a10834adf6.png",
+    "static/media/calculator.png": "/portfolio/static/media/calculator.23c6f36752f5b04e7f00.png",
+    "static/media/react_logo.png": "/portfolio/static/media/react_logo.44319306359c7112276d.png",
+    "index.html": "/portfolio/index.html",
+    "main.1284be8b.css.map": "/portfolio/static/css/main.1284be8b.css.map",
+    "main.5ffaf741.js.map": "/portfolio/static/js/main.5ffaf741.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1284be8b.css",
+    "static/js/main.5ffaf741.js"
+  ]
+}
