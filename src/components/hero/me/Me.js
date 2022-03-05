@@ -1,8 +1,4 @@
-import {useEffect, useRef} from 'react'
 import styled from 'styled-components'
-
-
-
 
 
 export const SkillFace = ({img}) => {
@@ -41,19 +37,16 @@ const Face = styled.div`
 
 export const MePicture = styled.div`
   position:absolute;
-  border-radius:10px;
 `
 
 export const MeMask = styled.div`
   position:absolute;
-  border-radius:10px;
   right:169px;
   top:-393px;
 `
 
 export const MeSkill = styled.div`
   position:absolute;
-  border-radius: 10px;
   width:90px;
   right:285px;
 
@@ -67,4 +60,7 @@ export const Me = styled.div`
   position:relative;
   align-items: center;
   justify-content: flex-end;
+  @media(max-width:800px){
+    transform:scale(.5);
+  }
 `

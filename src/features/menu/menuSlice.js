@@ -11,10 +11,11 @@ export const menuSlice = createSlice({
     toggle: (state) => {
       state.active = !state.active
     },
-  },
+    close: (state) => { state.active = false
+    }  },
 })
 
-export const {toggle} = menuSlice.actions
+export const {toggle, close} = menuSlice.actions
 
 export default menuSlice.reducer
 export const selectMenu = state => state.menu.active

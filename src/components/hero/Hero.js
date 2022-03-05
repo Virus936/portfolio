@@ -5,7 +5,6 @@ import {Me, MePicture, MeSkill, SkillFace, MeMask} from './me/Me'
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import ScrollToPlugin from 'gsap/ScrollToPlugin'
 
 import body from '../../image/me/body.png'
 import mask from '../../image/me/mask.png'
@@ -53,18 +52,40 @@ function Hero(){
       {rotationY:0},
       {rotationY:360, duration:3, repeat:-1,ease:'none'}
     )
-    tl.fromTo(
-      meRef.current,
-      {y:'0',x:'0'},
-      {
-        x:'-1600px',
-        scrollTrigger:{
-          trigger: '#acceuil',
-          //trigger: containerRef.current,
-          scrub:0,
-        },
-        ease:'none'
-      },)
+    
+    ScrollTrigger.matchMedia({
+      "(min-width:800px)":() => {
+
+        tl.fromTo(
+          meRef.current,
+          {y:'0',x:'0'},
+          {
+            x:'-1600px',
+            scrollTrigger:{
+              trigger: '#acceuil',
+              //trigger: containerRef.current,
+              scrub:0,
+            },
+            ease:'none'
+          },)
+            
+
+
+      },
+    })
+
+    //tl.fromTo(
+      //meRef.current,
+      //{y:'0',x:'0'},
+      //{
+        //x:'-1600px',
+        //scrollTrigger:{
+          //trigger: '#acceuil',
+          ////trigger: containerRef.current,
+          //scrub:0,
+        //},
+        //ease:'none'
+      //},)
     
     tl.fromTo(
       '#text_hero',
@@ -85,8 +106,8 @@ function Hero(){
       pin:true,
     })
 
+  },[])
 
-  })
   return <Container id='accueil' ref={containerRef}>
     <TextHero  name = 'Vira Lok' step={200}/>
     <Me ref={meRef}>
@@ -134,6 +155,7 @@ const TextHeroStyled = styled.div`
   background-position: -20% -30%;
   z-index:100;
   padding:3em;
+  margin:1em;
   border-radius:2em;
   box-shadow:0 0 40px 0 teal;
   user-select:none;
@@ -219,7 +241,10 @@ const Container = styled.div`
   align-items:center;
   height:100vh;
   overflow:hidden;
-  background-color:tranparent
+  background-color:tranparent;
+  @media(max-width:800px){
+    flex-direction:column;
+  }
 `
 
 export default Hero

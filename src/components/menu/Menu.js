@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Hamburger from './Hamburger'
 import {selectMenu} from '../../features/menu/menuSlice'
 import {useSelector, useDispatch} from 'react-redux'
-import {toggle} from '../../features/menu/menuSlice'
+import {toggle, close} from '../../features/menu/menuSlice'
 
 function Menu({font, background}){
   const menu = useSelector(selectMenu)
@@ -16,9 +16,9 @@ function Menu({font, background}){
     </Header>
     <Nav background={background} font={font} className={menu?'active':''}>
       <ul >
-        <li>iqwe</li>
-        <li>qweqweqwe</li>
-        <li>alskj</li>
+        <li> <a onClick={() => dispatch(close())} href="#root">Accueil</a></li>
+        <li> <a onClick={() => dispatch(close())} href="#presentation">Presentation</a></li>
+        <li> <a onClick={() => dispatch(close())} href="#projets">Mes Projets</a></li>
       </ul>
     </Nav>
   </Container>
@@ -60,6 +60,8 @@ const Header = styled.nav`
     font-size:2em;
     font-weight:bold;
     letter-spacing:.5em;
+    user-select:none;
+    cursor:pointer;
   }
 `
 

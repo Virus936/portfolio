@@ -57,5 +57,7 @@ table {
 	border-spacing: 0;
 }
 html{
-  scrollbar-color: lightblue #ffeae5;
+  scroll-behavior:smooth;
+  scrollbar-color:  lightblue white;
 }
+

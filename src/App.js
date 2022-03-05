@@ -26,7 +26,7 @@ function App() {
           },
 
         },
-        fpsLimit: 50,
+        fpsLimit: 19,
         interactivity: {
           events: {
             onClick: {
@@ -74,7 +74,7 @@ function App() {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 3,
+            speed: .6,
             straight: false,
           },
           number: {
@@ -82,7 +82,7 @@ function App() {
               enable: true,
               area: 800,
             },
-            value: 40,
+            value: 20,
           },
           opacity: {
             value: 0.5,
