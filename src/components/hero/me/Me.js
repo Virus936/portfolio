@@ -62,5 +62,6 @@ export const Me = styled.div`
   justify-content: flex-end;
   @media(max-width:800px){
     transform:scale(.5);
+    align-self:end;
   }
 `

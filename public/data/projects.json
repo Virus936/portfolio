@@ -1,0 +1,35 @@
+{
+  "projects" : [
+    {
+      "title":"amazon-clone",
+      "img":"asset/image/projets/amazonfront.png",
+      "desc":"Amazon-clone est une reproduction de la partie frontend du site Amazon. Les produits sont issues de l'api public fakestoreAPI",
+      "link":"https://e-clone-36390.firebaseapp.com/"
+    },
+    {
+      "title":"calculator",
+      "img": "asset/image/projets/calculator.png" ,
+      "desc":"Calculator est ma proposition de challenge frontendmentor qui a été réalisé en pure html, css, js",
+      "link":"https://virus936.github.io/calculator-js/"
+    },
+    {
+      "title":"tesla-vitrine",
+      "img": "asset/image/projets/tesla-vitrine.png" ,
+      "desc":"Tesla-vitrine est une reproduction du site vitrine de tesla réalisé en ReactJS",
+      "link":"https://virus936.github.io/tesla-vitrine/"
+    },
+    {
+      "title":"pierre-papier-ciseaux",
+      "img": "asset/image/projets/rock-papper-scissors.png" ,
+      "desc":"On connait tous le Pierre-Papier-Ciseaux, Sheldon(The Big Bang Theory) a une version 'améliorée'. J'ai développé en Full ReactJS cette version dans le cadre d'un challenge frontendmentorr",
+      "link":"https://virus936.github.io/rock-paper-scissors-spock-lizard/"
+    },
+    {
+      "title":"Splitter",
+      "img": "asset/image/projets/tip-calculator.png" ,
+      "desc":"Dans plusieurs pays, le service n'est pas intégré à l'addition. Tip-Calculator est un outil développé en ReactJS pour faciliter le calcul.",
+      "link":"https://virus936.github.io/tip-calculator/",
+      "library":["React Hook Form"]
+    }
+  ]
+}

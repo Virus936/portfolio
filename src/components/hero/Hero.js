@@ -143,7 +143,7 @@ const TextHero = ({name, step }) => {
   return <TextHeroStyled  id='text_hero'>
     <p> Bonjour, je suis </p>
     <p className='name'> {currentName && currentName.split('').map((e,i) => <span className='letter' key={i}>{e}</span> )} </p>
-    <p>Développeur, intégrateur web junior ReactJS</p>
+    <p>Développeur, intégrateur web junior ReactJS basé à Paris.</p>
   </TextHeroStyled>
 }
 
@@ -153,6 +153,7 @@ const TextHeroStyled = styled.div`
   background-size:80%;
   background-repeat:no-repeat;
   background-position: -20% -30%;
+  max-width:400px;
   z-index:100;
   padding:3em;
   margin:1em;
